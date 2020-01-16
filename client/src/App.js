@@ -7,7 +7,7 @@ function App() {
 
   useEffect(()=>{
     fetch(`/api/greeting?name=Gabe`)
-      .then(res=>res.json)
+      .then(res=>res.json())
       .then(greeting=>setGreeting(greeting))
       .catch(error=>{
         console.log(error);
